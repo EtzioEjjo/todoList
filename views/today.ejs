@@ -1,0 +1,15 @@
+
+<%-include('partials/header.ejs')%>
+
+  
+
+    <% if(locals.items){%>
+        <%for(item of items){%>
+    <div class="new_item"><input type="checkbox"><p> <%=item%></p></div>
+    <%}}%>
+
+<form action=<%=type%> method="post" class="form">
+    <input type="text" name="toDoItem" placeholder="Add Item" required>
+    <button type="submit">+</button>
+</form>
+<%-include('partials/footer.ejs')%>

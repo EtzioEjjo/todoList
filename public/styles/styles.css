@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+  
+
+}
+body{
+    background-color: #e4e9fd;
+
+
+}
+nav{
+    margin-top: 20px;
+}
+nav a{
+    color: #a683e3 ;
+    text-decoration: none;
+    margin: 10px 10px;
+    font-size: 1.2em;
+    transition: background-color .2s ease;
+    height: 5vh;
+
+
+}
+nav a:hover{
+    transform: scale(1.2);
+    background-color: #a683e3;
+    color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+
+
+}
+.flex{
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    align-items: center;
+    justify-content: center;
+  
+}
+.parent_container{
+min-height: 100vh;
+position: relative;
+width: 100%;
+
+}
+.container{
+    width:400px;
+    background-color: #fff;
+    height: auto;
+    margin: auto;
+    text-align: center;
+
+
+}
+
+.footer ,.date{
+    justify-self: center;
+    background-color: #a683e3;
+    width: inherit;
+    color:#fff;
+}
+
+.footer{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+
+}
+.date{
+    align-self: flex-start;
+
+}
+
+
+/*Created empty div to fix the footer */
+.empty{
+    height: 50px;
+}
+
+
+
+
+.form{
+    display: grid;
+    grid-template-columns: 2fr min-content;
+width: 100%;
+border-top:1px solid grey ;
+}
+
+.form input{
+    padding: 20px;
+    font-size: 1.2em;
+    width :350px;
+    border: none;
+    justify-self: left;
+    align-self: flex-start;
+    text-align: center;
+
+}
+.form input:focus{
+    outline: none;
+}
+.form button{
+    width: 40px;
+    border-radius: 27px;
+    background-color: #a683e3;
+    border: 0;
+    color: #fff;
+    font-size: 3em;
+}
+.form button:hover{
+    transform: scale(1.2);
+}
+
+
+.new_item{
+width: inherit;
+word-wrap: break-word;
+border-top: 1px solid #e4e9fd ;
+padding: 50px;
+border-radius: 10px;
+display: flex;
+justify-content: flex-start;
+
+   
+} 
+.new_item p{
+    word-break: break-all;
+}
+input[type="checkbox"]{
+   margin: 0 10px;
+
+   
+}
+.new_item input:checked ~ p{
+    text-decoration: line-through;
+    text-decoration-color:#a683e3;
+    z-index: 1;
+
+}
