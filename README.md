@@ -18,13 +18,13 @@ MongoDB
 
 HTML,CSS
 
-#To run project:-
+# To run project:-
 
-# Download dependencies :
+## Download dependencies :
 
 npm i
 
-# run project
+## run project
 
 nodemon index.js
 
