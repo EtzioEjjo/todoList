@@ -3,7 +3,9 @@
 
 
 The common funtionalities are:-
+
 -The user can add a to-do activity either for his work list or for their reguler day .
+
 -The user can mark an activity as done.
 
 
@@ -18,11 +20,11 @@ HTML,CSS
 
 #To run project:-
 
-##Download dependencies :
+#Download dependencies :
 
 npm i
 
-##run project
+#run project
 
 nodemon index.js
 
